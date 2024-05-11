@@ -4,7 +4,7 @@
 R.Version()#Informations on R version.
 ###########Work directory - organizing work environment###########
 getwd()
-setwd('/home/youssef/Documents/these/Megaron/details enquete/GIS_Batna1/sphinx results')
+setwd('/Path/To/Work/Directory/')
 rm(list=ls())
 
 ###########Installing-calling libraries##############
@@ -91,7 +91,7 @@ dev.off()
 
 ###merging-binding vectors-columns-rows in new data frames
 #cbind-cbind.data.frame (columns)- rbind-rbind.data.frame(rows)
-fq<-cbind.data.frame(as.character(df3$L.endroit),as.character(df3$Identité.spatiale))
+fq<-cbind.data.frame(as.character(df3$L.endroit),as.character(df3$IdentitÃ©.spatiale))
 
 smv<-rbind(sint7,sint19,sint3_7,sint3_19,
            sbtw7,sbtw19,sbtw3_7,sbtw3_19,
@@ -142,9 +142,9 @@ y<-quantile(join13$Unsaf_coun,na.rm = TRUE,probs=0:4/4)
 ### cut command to divide a range of a data values to intervals and gives them codes### 
 q_unsafe <- within(join13, q_unsafe <-as.integer(cut(Unsaf_coun, y, include.lowest=TRUE)))
 
-###melting data : dissoudre les données depuis un tableau large (wide) 
-#vers un tableau long en détataillant tous les attributs présents dans 
-#le tableau d'origine (large) dans des lignes de tableau différents :
+###melting data : dissoudre les donnÃ©es depuis un tableau large (wide) 
+#vers un tableau long en dÃ©tataillant tous les attributs prÃ©sents dans 
+#le tableau d'origine (large) dans des lignes de tableau diffÃ©rents :
 #voir ce lien : https://www.statology.org/melt-in-r/
 
 m.sum_int <- melt(sum_intghh,id.vars='id')
@@ -167,7 +167,7 @@ with(cvgax,plot(Visual.I_1,Chi2,type='p',
                 main=cor(Visual.I_1,Chi2)))
 
 with(gcounttt,plot(log10(Integrat_1),log10(tt_gcount),
-                   main=c('R²=',r38),
+                   main=c('RÂ²=',r38),
                    ylab='Space use',
                    xlab='Integration HH R3',
                    col=ifelse(r38>=0.25,'green','black'),
@@ -210,10 +210,10 @@ corrplot(var$cos2, is.corr=FALSE)
 # Cos2 total des variables sur Dim.1 et Dim.2
 fviz_cos2(res.pca, choice = "var", axes = 1:2)
 
-# Colorer en fonction du cos2: qualité de représentation
+# Colorer en fonction du cos2: qualitÃ© de reprÃ©sentation
 fviz_pca_var(res.pca, col.var = "cos2",
              gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
-             repel = TRUE # Évite le chevauchement de texte
+             repel = TRUE # Ã‰vite le chevauchement de texte
 )
 
 ####################graphical setup of plots########################
@@ -222,7 +222,7 @@ fviz_pca_var(res.pca, col.var = "cos2",
 par(mfrow=c(4,2),oma=c(0,0,2,0))
 
 #with(gcounttt,plot(log10(Integrat_1),log10(tt_gcount),
-#                   main=c('R²=',r38),
+#                   main=c('RÂ²=',r38),
 #                   ylab='Space use',
 #                   xlab='Integration HH R3',
 #                   col=ifelse(r38>=0.25,'green','black'),
@@ -317,14 +317,14 @@ fviz_eig(res.pca, addlabels = TRUE, ylim = c(0, 50))
 var <- get_pca_var(res.pca)
 var
 
-# Coordonnées
+# CoordonnÃ©es
 head(var$coord)
-# Cos2: qualité de répresentation
+# Cos2: qualitÃ© de rÃ©presentation
 head(var$cos2)
 # Contributions aux composantes principales
 head(var$contrib)
 
-# Coordonnées des variables
+# CoordonnÃ©es des variables
 head(var$coord, 4)
 
 fviz_pca_var(res.pca, col.var = "black")
