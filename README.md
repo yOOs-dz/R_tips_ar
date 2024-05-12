@@ -1,3 +1,4 @@
 # R_tips
-I present here my experience with R. Links, tips, some code and issues.
+تجد هنا روابط ، نصائح ، تعليمات مع شرح باللغة العربية. مرحبا بكل مساهمة.
+Here, you find links, tips, code and issues with Arabic explanation. Contributions are welcome.
 
