@@ -9,7 +9,7 @@ install.packages('...')
 
 ```c('','','',...)```
 
-###مثال :
+### مثال :
 ```
 install.packages(c("FactoMineR", "factoextra"))
 ```
