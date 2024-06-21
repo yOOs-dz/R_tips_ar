@@ -1,6 +1,10 @@
 ---
-title: Welcome to my blog
+title: # مدخل لآر تِبس R_tips
 ---
-## Introduction
-This is my first blog  built using this 'All In' tutorial.
-## To be continued ..
+# مدخل لآر تِبس R_tips
+مرحبا بكم هنا في آر تِبس.  ستجد ون هنا روابط ، نصائح ، تعليمات مع شرح باللغة العربية لأرضية آر. هذا الموقع رديف لمستودع https://github.com/yOOs-dz/R_tips_ar
+و الذي  يحمل عناصر أولية لمشروع أر تِبس. مرحبا بكل مساهمة على الموقع أعلاه.
+
+
+
+## مستمرون ..
